@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: " + score;
     }
 
-    public void SetLivesCount(int Lives)
+    public void SetLives(int Lives)
     {
         livesText.text = "Lives: " + Lives;
     }

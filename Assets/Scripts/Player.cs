@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
         horizontalScreenLimit = 11.5f;
         verticalScreenLimit = 7.5f;
         lives = 3;
-        FindObjectOfType<GameManager>().SetLivesCount(lives);
+        FindObjectOfType<GameManager>().SetLives(lives);
     }
 
     // Update is called once per frame
@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
     }
 
 
-    public void SetLivesCount(int Lives)
+    public void SetLives(int Lives)
     {
         FindObjectOfType<GameManager>().livesText.text = "Lives: " + lives;
     }
@@ -66,7 +66,7 @@ public class Player : MonoBehaviour
         //lives = lives - 1;
         //lives -= 1;
         lives--;
-        FindObjectOfType<GameManager>().SetLivesCount(lives);
+        FindObjectOfType<GameManager>().SetLives(lives);
 
         if (lives == 0)
         {
