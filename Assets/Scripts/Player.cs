@@ -66,7 +66,7 @@ public class Player : MonoBehaviour
         //lives = lives - 1;
         //lives -= 1;
         lives--;
-        FindObjectOfType<GameManager>().SetLives(lives);
+        FindObjectOfType<GameManager>().SetLivess(lives);
 
         if (lives == 0)
         {
