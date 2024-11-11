@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
 
     public GameObject explosion;
     public GameObject bullet;
+    public GameObject coin;
     public int lives;
 
     // Start is called before the first frame update

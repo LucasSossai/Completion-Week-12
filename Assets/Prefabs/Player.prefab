@@ -102,6 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 4910536062124653743, guid: 2d5a9c6137b0b984081abc4ff3157b0e, type: 3}
   bullet: {fileID: 4733981234398038366, guid: 4dea0cfd33aea984c8f1a75c838e3848, type: 3}
+  coin: {fileID: 5090587881828722748, guid: 4dd0bb0cec98f5e40bee4aa33f6595e0, type: 3}
+  lives: 0
 --- !u!58 &2159673191382122717
 CircleCollider2D:
   m_ObjectHideFlags: 0
