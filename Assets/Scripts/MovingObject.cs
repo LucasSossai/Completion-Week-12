@@ -15,18 +15,26 @@ public class MovingObject : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
-        if(myType == 1)
+    {
+        if (myType == 1)
         {
             //I am a bullet
             transform.Translate(new Vector3(0, 1, 0) * Time.deltaTime * 10f);
-        } else if (myType == 2) {
+        }
+        else if (myType == 2)
+        {
             //I am an enemy
             transform.Translate(new Vector3(0, -1, 0) * Time.deltaTime * 3f);
-        } else if (myType == 3)
+        }
+        else if (myType == 3)
         {
             //I am a cloud
             transform.Translate(new Vector3(0, -1, 0) * Time.deltaTime * Random.Range(2f, 6f));
+        }
+        else if (myType == 4)
+        {
+            //I am a coin
+            transform.Translate(new Vector3(0, -1, 0) * Time.deltaTime * 2f);
         }
 
         if ((transform.position.y > 9f ||  transform.position.y <= -9f) && myType != 3)
