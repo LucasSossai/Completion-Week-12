@@ -46,9 +46,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void EarnScore(int howMuch) 
+    public void EarnScore(int howMany) 
     {  
-        score = score + howMuch;
+        score = score + howMany;
         scoreText.text = "Score: " + score;
     }
 
